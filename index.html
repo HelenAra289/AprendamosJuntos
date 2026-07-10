@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AprendamosJuntos | Aprende sin limites</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="cursor"></div>
+
+    <div class="particles"></div>
+
+    <header class="header">
+        <div class="logo">AprendamosJuntos</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                
+                <li class="dropdown">
+                    <a href="https://drive.google.com/drive/folders/1WuVvHPxmSwQmZynE4hfPBJ-OEiDD-zGP?usp=sharing">Programación</a>
+                    <ul class="submenu">
+                        <!-- Redirección externa en el menú de arriba -->
+                        <li><a href="TU_ENLACE_HTML_AQUI" target="_blank">HTML</a></li>
+                        <li><a href="https://drive.google.com/file/d/1cUkm6NQNlwWIWiSaGXcKjqrCD_1Y_-cV/view?usp=drive_link" target="_blank">CSS</a></li>
+                        <li><a href="https://drive.google.com/file/d/1Tcusp49QwjFzpvnvEpTQN_eMntd7mZUU/view?usp=drive_link" target="_blank">JavaScript</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Inglés</a>
+                    <ul class="submenu">
+                        <li><a href="#ing">Video</a></li>
+                        <li><a href="#ing">Script</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Matemáticas</a>
+                    <ul class="submenu">
+                        <li><a href="https://drive.google.com/drive/folders/19hPTNkaUeE1DZT_-OCy6zciMRSfbaG87?usp=sharing">Videos</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="https://drive.google.com/drive/folders/1vVIRKCiuC3p1cSe7RDFiWW2sZQv1s3jq?usp=drive_link">Literatura</a>
+                    <ul class="submenu">
+                        <li><a href="#soc-script">Guión</a></li>
+                    </ul>
+                </li>
+                <li><a href="#referencias-seccion">Referencias bibliográficas</a></li>
+            </ul>
+        </nav>
+        <button class="theme-btn">Modo Oscuro</button>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <span class="badge">Plataforma Educativa Interactiva</span>
+            <h1 class="hero-title">Cada día es una nueva oportunidad para <span>aprender</span></h1>
+            <p>Programacion, Ingles, Matematicas y Literatura en una nueva aventura.</p>
+            <div class="hero-buttons">
+                <a href="#cursos-seccion" class="btn-primary">Empezar Ahora</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="planet">Inicio</div>
+            <div class="orbit orbit1"></div>
+            <div class="orbit orbit2"></div>
+            <div class="orbit orbit3"></div>
+        </div>
+    </section>
+
+    <section class="courses" id="cursos-seccion">
+        <h2>Explora tus materias</h2>
+        
+        <div class="tabs-container">
+            <button class="tab-btn active" data-tab="prog">Programación</button>
+            <button class="tab-btn" data-tab="ing">Inglés</button>
+            <button class="tab-btn" data-tab="mat">Matemáticas</button>
+        </div>
+
+        <div class="course-grid">
+            
+            <div class="course-card tab-content active" id="prog">
+                <div class="card-icon">Código Fuente & Documentación</div>
+                <h3>Programación Página Web</h3>
+                
+                <div class="interactive-subtabs">
+                    <button class="subtab-btn sub-active" data-subtarget="html-desc">HTML</button>
+                    <button class="subtab-btn" data-subtarget="css-desc">CSS</button>
+                    <button class="subtab-btn" data-subtarget="js-desc">JavaScript</button>
+                </div>
+
+                <!-- Apartado HTML modificado -->
+                <div class="subtab-pane sub-active" id="html-desc">
+                    <h4>¿Qué es HTML?</h4>
+                    <p>HyperText Markup Language (Lenguaje de Marcas de Hipertexto) es el esqueleto de toda página web.</p>
+                    <h4>¿Cuál es su función?</h4>
+                    <p>Su función es estructurar y organizar el contenido de un sitio web, definiendo elementos como textos, títulos, imágenes, hipervínculos y formularios.</p>
+                    <a href="TU_ENLACE_HTML_AQUI" target="_blank" class="btn-primary" style="text-decoration: none; display: inline-block;">Código HTML</a>
+                </div>
+
+                <!-- Apartado CSS modificado -->
+                <div class="subtab-pane" id="css-desc">
+                    <h4>¿Qué es CSS?</h4>
+                    <p>Cascading Style Sheets (Hojas de Estilo en Cascada) es el lenguaje utilizado para definir la presentación de un documento estructurado.</p>
+                    <h4>¿Cuál es su función?</h4>
+                    <p>Su función es controlar el aspecto visual, el diseño estético y la disposición espacial de la página web (colores, tipografías, adaptabilidad móvil, animaciones visuales y modos de pantalla).</p>
+                    <a href="https://drive.google.com/file/d/1cUkm6NQNlwWIWiSaGXcKjqrCD_1Y_-cV/view?usp=drive_link" target="_blank" class="btn-primary" style="text-decoration: none; display: inline-block;">Código CSS</a>
+                </div>
+
+                <!-- Apartado JavaScript modificado -->
+                <div class="subtab-pane" id="js-desc">
+                    <h4>¿Qué es JavaScript?</h4>
+                    <p>JavaScript es un lenguaje de programación interpretado, orientado a objetos y basado en prototipos.</p>
+                    <h4>¿Cuál es su función?</h4>
+                    <p>Su función principal es aportar dinamismo e interactividad a la página web, permitiendo crear efectos complejos, actualizar contenido en tiempo real, procesar datos y animar elementos interactivos en el navegador.</p>
+                    <a href="https://drive.google.com/file/d/1Tcusp49QwjFzpvnvEpTQN_eMntd7mZUU/view?usp=drive_link" target="_blank" class="btn-primary" style="text-decoration: none; display: inline-block;">Código JS</a>
+                </div>
+            </div>
+
+            <div class="course-card tab-content" id="ing">
+                <div class="card-icon">Idiomas / Language</div>
+                <h3>English</h3>
+
+                <div class="interactive-subtabs">
+                    <button class="subtab-btn sub-active" data-subtarget="ing-video">Video</button>
+                    <button class="subtab-btn" data-subtarget="ing-script">Script</button>
+                </div>
+
+                <div class="subtab-pane sub-active" id="ing-video">
+                    <h4>Video</h4>
+                    <p>Visualiza nuestro video inspirado en un adolescente extraordinario.</p>
+                    <button class="interactive-action-btn">Reproducir Video</button>
+                </div>
+
+                <div class="subtab-pane" id="ing-script">
+                    <h4>Script (Guión)</h4>
+                    <p>Visualiza nuestro guión en inglés sobre un adolescente extraordinario.</p>
+                    <button class="interactive-action-btn">Guión en Inglés</button>
+                </div>
+            </div>
+
+            <div class="course-card tab-content" id="mat">
+                <div class="card-icon">Matemática</div>
+                <h3>Geometría Analítica</h3>
+                
+                <div class="interactive-subtabs">
+                    <button class="subtab-btn sub-active" data-subtarget="mat-videos-pane">Videos</button>
+                </div>
+
+                <div class="subtab-pane sub-active" id="mat-videos-pane">
+                    <h4>Videos</h4>
+                    <p>Selecciona cualquier video sobre geometría analítica "circunferencia": </p>
+                    
+                    <div class="video-links-container" style="margin-top: 15px; display: flex; flex-direction: column; gap: 10px;">
+                        <a href="#" target="_blank" class="video-link-item" style="color: var(--primary); text-decoration: none; display: inline-block;">• Video 1</a>
+                        <a href="#" target="_blank" class="video-link-item" style="color: var(--primary); text-decoration: none; display: inline-block;">• Video 2</a>
+                        <a href="https://drive.google.com/file/d/1gokpgpIcNTBWp5oCCso23Wi1HipjaXXr/view?usp=sharing" target="_blank" class="video-link-item" style="color: var(--primary); text-decoration: none; display: inline-block;">• Video 3</a>
+                        <a href="https://drive.google.com/file/d/1dVM5fxdEaqUx30VlUPwj4Z6ggzM-xuWy/view?usp=sharing" target="_blank" class="video-link-item" style="color: var(--primary); text-decoration: none; display: inline-block;">• Video 4</a>
+                        <a href="https://drive.google.com/file/d/1_nrB7HqnWLiHMdp0TX-pkKLL-_hd3B4-/view?usp=drive_link" target="_blank" class="video-link-item" style="color: var(--primary); text-decoration: none; display: inline-block;">• Video 5</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="socials-script-section" id="soc-script">
+        <div class="script-card">
+            <div class="card-icon">Sociales</div>
+            <h3>Guión-Español</h3>
+            <p>Sección dedicada al guión de un adolescente extraordinario.</p>
+            
+            <div class="guion-link-container" style="margin-top: 15px; margin-bottom: 20px;">
+                <a href="https://drive.google.com/drive/folders/1vVIRKCiuC3p1cSe7RDFiWW2sZQv1s3jq?usp=drive_link" target="_blank" class="btn-primary" style="text-align: center;">Visualizar Guión Completo</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contacto-seccion">
+        <div class="contact-container">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes dudas o sugerencias? Envianos tu opinión.</p>
+            
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Tu Opinión</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu comentario u opinión aquí..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="references-section" id="referencias-seccion">
+        <div class="references-container">
+            <h2>References bibliográficas</h2>
+            <ul class="ref-list">
+                <li>Reyes. I. (2025/11/07). Santiago Martínez, el adolescente guatemalteco que ganó plata en matemáticas en Singapur y ahora va por la conquista de China. Prensa Libre. <a href="https://www.prensalibre.com/vida/escenario/santiago-martinez-el-adolescente-guatemalteco-que-gano-plata-en-matematicas-en-singapur-y-ahora-va-por-la-conquista-de-china/" target="_blank" rel="noopener noreferrer">Enlace al Artículo</a></li>
+                <li>Villagrán. G. (2024/11/08). Guatemala es medalla de plata en olimpiadas de matemáticas. Diario de Centroamérica. <a href="https://dca.gob.gt/noticias-guatemala-diario-centro-america/guatemala-es-medalla-de-plata-en-olimpiadas-de-matematicas/" target="_blank" rel="noopener noreferrer">Enlace al Artículo</a></li>
+                <li>Vicente. J. (2025/10/07). Santiago Martínez ganó medalla de plata en Olimpiada de Matemáticas 2025 de Singapur. Guatemala. <a href="https://www.guatemala.com/noticias/sociedad/guatemalteco-santiago-martinez-gano-medalla-de-plata-en-olimpiada-de-matematicas-en-singapur.html" target="_blank" rel="noopener noreferrer">Enlace al Artículo</a></li>
+                <li>Prensa Libre. (2025). Santiago Martínez: el adolescente guatemalteco que ganó plata en matemáticas en Singapur y ahora va por la conquista de China. <a href="https://www.prensalibre.com/vida/escenario/santiago-martinez-el-adolescente-guatemalteco-que-gano-plata-en-matematicas-en-singapur-y-ahora-va-por-la-conquista-de-china/" target="_blank" rel="noopener noreferrer">Enlace al Artículo</a></li>
+                <li>Prensa Libre. (2024). Guatemalteco gana medalla de plata en la Olimpiada Mundial de Jóvenes Matemáticos en Indonesia. <a href="https://www.prensalibre.com/vida/escenario/guatemalteco-gana-medalla-de-plata-en-la-olimpiada-mundial-de-jovenes-matematicos-en-indonesia/" target="_blank" rel="noopener noreferrer">Enlace al Artículo</a></li>
+                <li>Prensa Libre. (2024). Santiago Martínez obtiene medalla de oro en SASMO y clasifica a competencias internacionales. <a href="https://www.prensalibre.com/vida/escenario/santiago-martinez-gana-oro-en-sasmo-y-clasifica-a-competencias-internacionales/" target="_blank" rel="noopener noreferrer">Enlace al Artículo</a></li>
+                <li>Filgua. (2025). Presentación del libro “Crónica Matemática”. <a href="https://filgua.com/" target="_blank" rel="noopener noreferrer">Enlace Oficial Filgua</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">AprendamosJuntos</span>
+                <p>Llevando el aprendizaje al siguiente nivel de forma interactiva.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Explora</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#cursos-seccion">Materias</a></li>
+                    <li><a href="#referencias-seccion">Referencias</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 AprendamosJuntos. Todos los derechos reservados. Desarrollado con pasión.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
